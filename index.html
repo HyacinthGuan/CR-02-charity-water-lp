@@ -1,47 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>charity: water — Campus Landing Page</title>
+  <meta name="description" content="Inspire your campus to take action on the global water crisis with charity: water." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
-    <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
+  <!-- Top Navigation -->
+  <div class="topbar">
+    <div class="container nav">
+      <div class="brand">
+        <!--  img/logo.jpg  -->
+        <img src="img/logo.jpg" alt="charity: water logo" class="logo-img" />
+      </div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#impact">Impact</a>
+        <a href="donate.html">Donate</a>
+      </nav>
+    </div>
+  </div>
 
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
-    </section>
+  <!-- HERO -->
+  <header class="hero" id="about">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1>Your Leadership Starts with Clean Water</h1>
+        <p class="sub">Every dollar you give fuels clean water projects you can see, track, and be proud of.</p>
+        <a class="cta" href="donate.html">Bring charity: water to Your Campus</a>
+      </div>
 
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
-        </div>
-    </section>
+      <figure class="hero-art">
+        <img src="img/hero.jpg" alt="Smiling child holding a glass of clean water" />
+        <figcaption class="hero-banner">
+          <span class="small">From Today, Lead the Change</span>
+          <span class="big">Bring <em>charity: water</em> to Your Campus</span>
+        </figcaption>
+      </figure>
+    </div>
+  </header>
 
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
-    </section>
+  <!-- THE WATER CRISIS -->
+  <section class="container" aria-labelledby="crisis-title">
+    <div class="eyebrow">The Water Crisis</div>
+    <h2 id="crisis-title">Why It Matters</h2>
+    <div class="divider" aria-hidden="true"></div>
+    <ul class="bullets">
+      <li><strong>1 in 10</strong> people lack access to clean drinking water.</li>
+      <li>Millions of women and children spend hours each day collecting water — losing time for education and growth.</li>
+    </ul>
+  </section>
+
+  <!-- YOUR ROLE -->
+  <section class="container" aria-labelledby="role-title">
+    <div class="eyebrow">Your Role</div>
+    <h2 id="role-title">Your Campus Can Change the World</h2>
+    <div class="divider" aria-hidden="true"></div>
+    <ul class="bullets">
+      <li>You don’t just want to participate — you want to <strong>lead</strong>.</li>
+      <li>One donation, one fundraiser, one campus event can spark real change.</li>
+      <li>With charity: water, every action is transparent and trackable, so you’ll always see your true impact.</li>
+    </ul>
+  </section>
+
+  <!-- DONATION -->
+  <section class="container donate-section" id="donate">
+    <h3>Give Up a Coffee, Change a Life</h3>
+    <p>Just <strong>$5</strong> provides clean water for one person.</p>
+    <p>At <em>charity: water</em>, <strong>100%</strong> of your donation goes directly to projects. You can track where every dollar goes and see the lives you’ve transformed.</p>
+    <p><a class="cta" href="donate.html">Donate Now</a></p>
+  </section>
+
+  <!-- IMPACT STORIES -->
+<section class="container" id="impact" aria-labelledby="impact-title">
+  <div class="eyebrow">Impact Stories</div>
+  <h2 id="impact-title">Real Change, Created by You</h2>
+  <div class="divider" aria-hidden="true"></div>
+
+  <div class="impact-flip">
+    <figure>
+      <img class="before" src="img/before.jpg" alt="Collecting unsafe water" />
+      <img class="after" src="img/after.jpg" alt="Clean water brings health and joy" />
+      <figcaption>
+        <span class="before-cap">Collecting unsafe water every day.</span>
+        <span class="after-cap">Clean water brings health and joy.</span>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+
+  <!-- Footer >
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-tagline"><strong>Every Drop Counts. Let’s Lead Together.</strong></p>
+      <div class="social">
+        <a href="#" aria-label="Instagram" class="social-link">Instagram</a>
+        <a href="#" aria-label="Twitter" class="social-link">Twitter</a>
+        <a href="#" aria-label="Facebook" class="social-link">Facebook</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

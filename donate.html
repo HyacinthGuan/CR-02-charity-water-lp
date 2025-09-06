@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Donate — charity: water</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .donate-wrap{max-width:720px;margin:40px auto;background:#fff;border-radius:20px;box-shadow:var(--shadow);padding:24px}
+    .donate-wrap h1{margin:0 0 12px;font-size:32px;font-weight:900;color:var(--cw-deepblue)}
+    .donate-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .donate-grid .full{grid-column:1/-1}
+    label{font-weight:700;font-size:14px}
+    input,select{width:100%;padding:12px 10px;border:1px solid #d8d8d8;border-radius:10px}
+    .note{font-size:13px;opacity:.8;margin-top:8px}
+    .actions{margin-top:16px}
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container nav">
+      <div class="brand"><img src="img/logo.jpg" alt="charity: water logo" class="logo-img" /></div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+      </nav>
+    </div>
+  </div>
+
+  <main class="container">
+    <div class="donate-wrap">
+      <h1>Donate</h1>
+      <p>100% of your donation goes to clean water projects. You’ll receive a receipt by email.</p>
+
+      <form action="thankyou.html" method="get">
+        <div class="donate-grid">
+          <div>
+            <label for="name">Full Name</label>
+            <input id="name" name="name" placeholder="Jane Doe" required />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="jane@example.com" required />
+          </div>
+
+          <div>
+            <label for="amount">Amount (USD)</label>
+            <select id="amount" name="amount">
+              <option value="5">$5</option>
+              <option value="10">$10</option>
+              <option value="25">$25</option>
+              <option value="50">$50</option>
+              <option value="100">$100</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="method">Payment Method</label>
+            <select id="method" name="method">
+              <option>Credit/Debit Card</option>
+              <option>PayPal</option>
+              <option>Bank Transfer</option>
+            </select>
+          </div>
+
+          <!-- 静态演示字段（无后端，不会真实扣款） -->
+          <div class="full">
+            <label for="card">Card Number</label>
+            <input id="card" name="card" inputmode="numeric" placeholder="4111 1111 1111 1111" />
+          </div>
+          <div>
+            <label for="exp">Expiry</label>
+            <input id="exp" name="exp" placeholder="MM/YY" />
+          </div>
+          <div>
+            <label for="cvc">CVC</label>
+            <input id="cvc" name="cvc" placeholder="123" />
+          </div>
+        </div>
+
+        <p class="note">This is a demo form for your project. To accept real payments you’d need a backend (e.g., Stripe) which is outside this assignment.</p>
+        <div class="actions">
+          <button class="cta" type="submit">Confirm Donation</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-tagline"><strong>Every Drop Counts. Let’s Lead Together.</strong></p>
+      <div class="social">
+        <a href="#" class="social-link">Instagram</a>
+        <a href="#" class="social-link">Twitter</a>
+        <a href="#" class="social-link">Facebook</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
